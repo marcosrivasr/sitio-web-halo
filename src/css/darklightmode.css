@@ -1,0 +1,101 @@
+@media (prefers-color-scheme: dark) {
+  h2 {
+    color: white;
+  }
+  nav {
+    background-color: transparent;
+  }
+  nav ul li .link::before {
+    background-color: white;
+  }
+
+  body {
+    background-color: black;
+  }
+  nav ul li a {
+    color: white;
+  }
+
+  header {
+    background-image: url(../img/halo-infinite-cover-darkmode.jpg);
+  }
+
+  nav .menu {
+    background-color: black;
+  }
+
+  nav .menu a:hover {
+    color: black;
+    background-color: white;
+  }
+
+  .mobile {
+    background-color: black;
+  }
+
+  .mobile .header {
+    background-color: black;
+  }
+  .mobile .links a {
+    color: #ccc;
+    border-bottom: solid 1px #222;
+  }
+
+  #videos {
+    color: white;
+  }
+
+  .info {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+  }
+  h2 {
+    color: black;
+  }
+  nav {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  nav ul li a {
+    color: black;
+  }
+
+  header {
+    background-image: url(../img/halo-infinite-cover.jpeg);
+  }
+
+  nav .menu {
+    background-color: white;
+  }
+
+  nav .menu a:hover {
+    color: white;
+    background-color: black;
+  }
+
+  .mobile {
+    background-color: white;
+  }
+
+  .mobile .header {
+    background-color: white;
+  }
+
+  .mobile .links a {
+    color: #222;
+    border-bottom: solid 1px #ccc;
+  }
+
+  #videos {
+    color: black;
+  }
+
+  .info {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
