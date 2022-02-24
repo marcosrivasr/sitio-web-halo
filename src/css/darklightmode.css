@@ -29,6 +29,10 @@
     background-color: white;
   }
 
+  #bmenu {
+    color: white;
+  }
+
   .mobile {
     background-color: black;
   }
@@ -36,6 +40,7 @@
   .mobile .header {
     background-color: black;
   }
+
   .mobile .links a {
     color: #ccc;
     border-bottom: solid 1px #222;
@@ -48,6 +53,18 @@
   .info {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
+  }
+
+  #get-the-game {
+    background-color: #000;
+  }
+
+  .item-store .right .info-product {
+    color: white;
+  }
+
+  footer {
+    background-image: url(../img/master-chief-darkmode.jpg);
   }
 }
 
@@ -78,6 +95,10 @@
     background-color: black;
   }
 
+  #bmenu {
+    color: black;
+  }
+
   .mobile {
     background-color: white;
   }
@@ -97,5 +118,13 @@
 
   .info {
     background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .item-store .right .info-product {
+    color: black;
+  }
+
+  footer {
+    background-image: url(../img/master-chief.jpg);
   }
 }

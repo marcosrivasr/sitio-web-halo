@@ -9,6 +9,11 @@ body {
   line-height: 1.5;
 }
 
+select {
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -72,23 +77,36 @@ header {
 .show {
   display: flex !important;
 }
+header #logo {
+  display: inline-flex;
+  padding: 10px 0;
+}
+#bmenu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 
 .mobile {
   display: none;
   font-size: 24px;
   width: 100%;
   flex-direction: column;
+  z-index: 200;
 }
 
 .mobile .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .mobile .links {
   display: none;
   flex-direction: column;
+  position: relative;
+  z-index: 200;
 }
 
 .mobile .links a {
@@ -117,6 +135,7 @@ BANNER
   padding: 40px;
   width: 500px;
   position: absolute;
+  z-index: 1;
   top: 200px;
   right: 100px;
 }
@@ -313,6 +332,56 @@ MULTIPLAYER
 
 /*
 --------------------------------------------------------------------
+GET THE GAME
+--------------------------------------------------------------------
+*/
+
+#get-the-game {
+  text-align: center;
+}
+
+.item-store {
+  display: flex;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.item-store .left {
+  width: 800px;
+}
+.item-store .left img {
+  width: 300px;
+}
+
+.item-store .right {
+  text-align: left;
+}
+
+.item-store .right .info-product {
+  color: white;
+  margin: 0;
+}
+.item-store .right .info-product h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.item-store .right .info-product p {
+  padding: 5px 0;
+}
+/*
+--------------------------------------------------------------------
+FOOTER
+--------------------------------------------------------------------
+*/
+footer {
+  height: 1080px;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*
+--------------------------------------------------------------------
 MEDIA QUERIES
 --------------------------------------------------------------------
 */
@@ -329,8 +398,9 @@ MEDIA QUERIES
   }
 
   #banner {
-    position: static;
+    position: static !important;
     width: 100%;
+    z-index: 100;
   }
 
   #slider #current {
@@ -348,11 +418,28 @@ MEDIA QUERIES
     width: 600px;
     margin: 0 auto;
   }
+
+  .item-store {
+    width: 90%;
+  }
+
+  .item-store .left {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .item-store .left img {
+    width: 200px;
+  }
+
+  footer {
+    height: 600px;
+  }
 }
 
 @media screen and (max-width: 622px) {
   header {
     height: 30vh;
+    background-position: center 46px;
   }
   nav {
     width: 100%;
@@ -368,6 +455,8 @@ MEDIA QUERIES
 
   #banner {
     font-size: 1.3em;
+    position: initial !important;
+    z-index: 100;
   }
 
   #slider #current {
@@ -393,5 +482,24 @@ MEDIA QUERIES
   h2 {
     font-size: 2.3em;
     text-align: center;
+  }
+
+  .item-store {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .item-store .left img {
+    width: 300px;
+  }
+
+  .item-store .right {
+    text-align: center;
+  }
+
+  footer {
+    height: 400px;
   }
 }
